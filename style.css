@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333;
+    padding: 15mm 12mm;
+    max-width: 210mm;
+    margin: 0 auto;
+    font-size: 10pt;
+}
+
+.main {
+    max-width: 180mm;
+    margin: 0 auto;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.avatar-box {
+    flex: 0 0 35mm;
+}
+
+.profile {
+    width: 35mm;
+    height: 45mm;
+    object-fit: cover;
+    border: 1px solid #000;
+    margin-top: 4mm;
+}
+
+.info-box {
+    flex: 1;
+}
+
+.info-box h1 {
+    font-size: 16pt;
+    color: black;
+    margin-bottom: 2mm;
+}
+
+.info-box h2 {
+    font-size: 11pt;
+    color: #000080;
+    margin-bottom: 4mm;
+}
+
+.contact-list p {
+    margin-bottom: 2.5mm;
+    font-size: 10pt;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.contact-list p b {
+    display: inline-block;
+    width: 20mm;
+    color: #444;
+    vertical-align: top;
+}
+
+.middle-section {
+    margin-top: 3mm;
+}
+
+.middle-section h2 {
+    font-size: 12pt;
+    color: #000080;
+    margin-bottom: 2mm;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 2.5mm 0;
+}
+
+.education, .skill, .Certifications {
+    margin-left: 5mm;
+}
+
+ul {
+    padding-left: 14px;
+    list-style-type: square;
+}
+
+ul li {
+    font-size: 10pt;
+    margin-bottom: 1.5mm;
+}
+
+.education p {
+    display: flex;
+    margin-bottom: 2.5mm;
+    font-size: 10pt;
+}
+
+.education p span {
+    display: inline-block;
+    width: 15mm;
+    color: #444;
+}
+
+.PROJECTS {
+    display: flex;
+    align-items: flex-start;
+    gap: 8mm;
+    margin-bottom: 3mm;
+}
+
+.time-line {
+    margin-top: 10mm;
+    margin-left: -8mm;
+    flex: 0 0 40mm;
+    text-align: right;
+    font-weight: bold;
+    color: #666;
+    font-size: 9pt;
+}
+
+.project-name {
+    flex: 1;
+}
+
+.project-name h3 {
+    font-size: 10.5pt;
+    color: #333;
+    margin-bottom: 3mm;
+}
+
+.project-name p {
+    text-align: justify;
+    font-size: 10pt;
+}
+
+.Experience p {
+    text-align: justify;
+    font-size: 10pt;
+}
+
+@media screen and (max-width: 768px) {
+    .top-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-list p {
+        justify-content: center;
+    }
+
+    .contact-list p b {
+        width: 80px;
+    }
+
+    .info-box h1 {
+        font-size: 18px;
+    }
+
+    .info-box h2 {
+        font-size: 14px;
+    }
+}
+
+@media print {
+    body {
+        background: none !important;
+        color: black !important;
+        padding: 10mm !important;
+        max-width: 210mm !important;
+        font-size: 9.5pt !important;
+    }
+
+    .main {
+        background: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+    }
+
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+
+    .profile {
+        border: 1px solid #000 !important;
+    }
+}
